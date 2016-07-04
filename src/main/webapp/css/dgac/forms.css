@@ -1,0 +1,113 @@
+/*
+	Data de creacio: 07/12/2009
+	Data darrera modificacio: 27/04/2010
+	Autors: M. Martinez & Oesia networks (J.Aragon)
+	CSS: Arxiu principal d'estils de la Guia d'Aplicacions.
+	
+*/
+
+/* Formulari en el contentMain */
+#contentMain form { width:99%;}
+#contentMain form p{ margin-bottom:.5em;} 
+
+#contentMain form p.requiredFields { text-align:right; float:right; margin:0; padding:0; color: #818181;  } 
+#contentWrapper.withNav #contentMain form p.requiredFields { float:none;  } 
+#contentMain form h4{ clear:both;	background: #4f4f4f url("../../images/dgac/box.gif") no-repeat left 0;	color: #fff;		padding:0 0 0px 8px; margin-bottom: 0px;	}
+#contentWrapper.withNav #contentMain form h4{ clear:none;	}
+#contentMain form h4 span{	background: #4f4f4f url("../../images/dgac/box.gif") no-repeat right 0;	display:block;	margin-bottom: 0px;	padding:2px 8px 5px 7px;	}
+#contentMain fieldset {margin:1em 0; border-bottom:1px solid #B3B3B3;	padding:0 5px 10px 35px;  }
+#contentMain form fieldset legend{	color:#660303;	font-weight:bold;  margin-left:-30px; margin-bottom:1em;  }
+
+#contentMain form div.row {  min-height:1em; margin-bottom:1em; clear:both; }
+* html #contentMain form div.row { height:1em;}
+#contentMain form div.row:after { clear:both; content:""; display:block; height:0; visibility:hidden;}
+
+#contentMain form div.row div{ float:left; margin-right:2em; }
+#contentMain form .box  { border: solid 1px #818181; padding:10px 10px 10px 15px; }
+
+#contentMain form  label{ display:block; }
+#contentMain form  input{ width:auto; vertical-align:top  }
+#contentMain form  input.big, #contentMain form  select.big, #contentMain form  table.big{ width:600px;   }
+#contentMain form  input.medium, #contentMain form  select.medium, #contentMain form  table.medium{ width:400px;  }
+#contentMain form  input.small, #contentMain form  select.small, #contentMain form  table.small{ width:200px;  }
+#contentMain form select{ border:1px solid #000000; }
+
+#contentMain form div.row p.dates{ float:left; margin-right:1.5%; margin-left:5px} 
+#contentMain form .disabled { color: #B3B3B3; }
+#contentMain form  label span.warning { background-color:#AC2115; color:#FFF; padding:0 3px}
+
+/* submits*/
+#contentMain form div.submitButtons { text-align: right;}
+#contentMain form div.submitButtons input { padding:1px 8px;  margin: 0px; clear: both; border: 1px solid #000; cursor: pointer; width: auto; text-align:center; background-color: #EBEBEB; margin-right:10px;  }
+#contentMain form .showList  div.submitButtons { float:none; }
+#contentMain form div.submitButtons input.disabled { background-color:#FFFFFF; border:1px solid #B3B3B3; color:#B3B3B3; }
+#contentMain form div.submitButtons .mainAction{ font-weight:bold}
+
+/* taules en formularis */
+#contentMain form table{ margin-bottom:0; width:auto;}
+#contentMain form table label{ display:inline; font-weight:normal;}
+#contentMain form table .checkbox{ white-space: nowrap; min-width:5em; }
+* html body #contentMain form table .checkbox { width: 90px; } 
+*:first-child+html body #contentMain form table .checkbox { width: 90px; }  
+#contentMain form table .checkbox .hidden{ display: none;}
+#contentMain form table .checkbox input{ float:left; margin-right:10px}
+#contentMain form table td.checkbox { padding-left: 5px;   }
+#contentMain form table td.checkbox input {margin-right:15px}
+
+/* accions a les taules*/
+#contentMain form tr.actions a{ margin-right:1em; }
+#contentMain form tr.actions div{ float:none }
+#contentMain form tr.actions td { border-top:1px solid #818181; padding-top:10px; padding-bottom:10px; padding-right:10px; }
+#contentMain form tr.actions:hover  { background:transparent}
+#contentMain form tr.actions td label { display:block;}
+#contentMain form tr.actions td p.selectAll{ margin-bottom:1em; }
+
+/* accions a les taules*/
+#contentMain form tr.actions div.submitButtons, #contentMain form div.actions div.submitButtons{ margin-bottom:3em; text-align:left; margin-top:1em }
+
+/* tipus llista de checkbox i radiobuttons*/
+#contentMain form .list{ min-width:160px;}
+* html #contentMain form .list{ width:160px;}
+#contentMain form .list label{ display:inline}
+#contentMain form .list input { vertical-align:middle;}
+
+/*tipus multiselect*/
+#contentMain form .multiselect { width:99%; }
+* html #contentMain form .multiselect { width:auto; }
+#contentMain form .multiselect select{  min-height:100px;	}
+#contentMain form .multiselect .actions{  min-height:100px;	}
+
+/* tipus localitza arxiu*/
+#contentMain form .filesLocation div{ margin-right:5px;}
+#contentMain form .filesLocation .submitButtons{	margin-top:0.7em;	}
+#contentMain form .filesLocation div.submitButtons input { margin-top:10px; }
+
+/* tipus desplegable en forms*/ 
+#contentMain form .collapsible li{ width:100%;}
+#contentMain form .collapsible .collapsibleClose  h4, #contentMain form .collapsible .collapsibleClose  h5,
+#contentMain form .collapsible .collapsibleOpen h4, #contentMain form .collapsible .collapsibleOpen h5{ width: 100%;  }
+
+/* tipus cerca avancada*/ 
+#contentMain fieldset#advancedSearch {	border:1px solid #B3B3B3;	padding:20px 35px;	}
+
+/* tipus mostra llistes */
+#contentMain form .showList { margin-bottom:1em;}
+
+/* tipus cerca simple*/
+#contentMain #search { margin-bottom:1.5em;}
+#contentMain #search form{ border-top:1px solid #B3B3B3; padding:5px;}
+#contentMain #search form fieldset{margin:0; border-bottom:1px solid #B3B3B3; padding-left:0;}
+#contentMain #search form legend{ color:#000; margin:0; padding:0}
+
+/* tipus formulari login i logout */
+#contentMain form#loginForm, #contentMain form#logoutForm{  margin:0; padding:0;}
+#contentMain form#loginForm fieldset, form#logoutForm fieldset{ border:0}
+#contentMain form#loginForm .box, form#logoutForm .box{ padding:0 20px 5px 40px; width:240px; margin:0 auto}
+*:first-child+html #contentMain form#loginForm .box{ padding:0 20px 5px 20px; }
+#contentMain form#loginForm .box div, form#logoutForm .box div { margin-bottom:.5em;}
+#contentMain form#loginForm div.submitButtons, form#logoutForm div.submitButtons { margin:1em 0;  }
+#contentMain form#logoutForm div.submitButtons {text-align:left} 
+#contentMain form#logoutForm div.submitButtons .cancel { margin-left:0;} 
+#contentMain form#loginForm ul , #contentMain form#logoutForm ul , #contentMain form#loginForm ul li, #contentMain form#logoutForm ul li { margin:0; padding:0 }
+#contentMain form#loginForm ul li, #contentMain form#logoutForm ul li { background-image:none; margin: 0px; padding-left: 0px; }
+#contentMain form#loginForm label { font-weight: bold; }

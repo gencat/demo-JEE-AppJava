@@ -1,0 +1,95 @@
+/*
+	Data de creacio: 07/12/2009
+	Data darrera modificacio: 27/04/2010
+	Autors: M. Martinez, Oesia networks (J.Aragon)
+	CSS: Arxiu principal d'estils de la Guia d'Aplicacions.
+*/
+
+#languages ul li, #navTools  ul li, #nav2 ul li, #navSkills ul li {	float: left; padding: 0;	}
+#languages a, #navTools a, #siteInfo a{ color:#4D4D4D; padding:0 6px;	}	
+
+#navTools ul li{ margin:0 }
+#navTools a, #languages a{ text-decoration:underline; padding:0 0 0 12px;}
+
+#navSkills ul li { padding: 0 5px; background: transparent url("../../images/dgac/navSkillsSep.gif") no-repeat scroll 0 55%; margin-left: 0px; }
+#navSkills ul li:first-child, #navSkills ul li.first-child { background-image:none;	}
+
+#breadCrumb li {	display: inline;	margin-left: 2px;	padding-left: 10px; background:transparent url("../../images/dgac/breadCrumbSep.gif") no-repeat  0 60%    ; }
+#breadCrumb li a:hover {	text-decoration: underline;}
+#breadCrumb li.first-child,  #breadCrumb li:first-child {	margin-left: 0;	padding-left: 0;	background: none;}
+
+/* Menu al footer */
+#siteInfo ul li { display:inline }
+#siteInfo li a{	background:transparent url("../../images/dgac/navBottomSep.gif") no-repeat 0 50%; }
+#siteInfo li:first-child a, #siteInfo li.first-child a { background:none; }
+
+/* Menu horitzontal interior */
+#nav2 ul li { background-color:#EBEBEB;	padding:3px 25px; margin-right:5px; color:#AC2115;	}
+#nav2 ul li a{ color:#4d4d4d; }	
+
+/* Menu vertical esquerra */
+#nav ul{margin-bottom:2em; background-color:#FFF }
+#nav li {background:#b3b2b2 url("../../images/dgac/navL1Bg.gif") no-repeat right top; clear:left; line-height:1em; min-height:1px; margin-bottom:8px;  }
+#nav li:after { clear:both; content:""; display:block; height:0; visibility:hidden; }
+#nav a {  font-weight:bold; float:left; min-height:1em; outline:none; padding:4px 12px 5px 12px; }
+* html #nav a {height:1em;}
+/* 2 level */
+#nav li ul {clear:both; margin-bottom:0; }
+#nav li li a { float:none; min-height:0; padding:0; background:#FFFFFF none repeat scroll 0 0; font-weight:normal;  }
+#nav li li { padding:0em 0px 0em 0px; margin-top:0;line-height:1.2em; margin-bottom:0;   background:#fff url("../../images/dgac/navArrow.gif") no-repeat scroll 0 0.7em;}
+#nav li li a { margin-bottom:0;padding:0.5em 12px 0.4em 0px;margin-left:22px; display:block }
+/* 3 level */
+#nav li li ul{background-color:#FFF;  padding-top:1px; padding-bottom:0; margin-bottom:0 }
+* html #nav li li ul{ padding-top:5px;  }
+*:first-child+html #nav li li ul{ padding-top:5px; }
+#nav li li li { background:none; padding-right:0; background-color:#FFF; margin:0; margin-top:0 }
+#nav li li li a{ font-weight:normal; background: url("../../images/dgac/markerUl.gif") no-repeat scroll 0px 0.7em; padding-left:10px;   }
+/* selected opened*/
+#nav li.selected {background:#AC2115 url("../../images/dgac/navL1Bg-over.gif") no-repeat right top;}
+#nav li li.selected {background:#fff url("../../images/dgac/navArrowSelected.gif") no-repeat scroll 0 0.7em;}
+#nav li.selected li.selected , #nav li li.selected {  background-color:#FFF;}
+#nav li li li.selected { background:none;  }
+#nav li.selected li li.selected a { font-weight:bold;}
+#nav li.selected a{ color:#FFF}
+#nav li.selected li.selected a, #nav li li.selected a, #nav  li.opened  a {color:#AC2115;}
+#nav li a{ color:#3F3F3F}
+#nav li li a, #nav li.selected li   a,  #nav li.selected li.selected li a,  #nav li.selected li.opened li a,#nav li.selected li.opened li.selected a { color:#4D4D4D; }
+#nav li li a.opened{  background-image:url("../../images/dgac/navMain1.gif"); background-repeat:no-repeat; background-position: right .5em;}
+#nav li li.selected a.opened{  background-image:url("../../images/dgac/navArrowSelectedOpen.gif"); background-position:right;}
+
+/* menu horizontal superior*/ 
+#navMain { padding-left: 40px; }
+#navMain a {  color: #AC2115;	background:transparent url("../../images/dgac/navMain.gif") no-repeat top right;	padding: 2px 12px;	border-left: solid 1px #A1A1A1; display:block;}
+#navMain li ul, #navMain li ul li ul, #navMain li ul li ul li { display:none }
+#navMain li:hover ul, #navMain li:hover ul li:hover ul, #navMain li:hover ul li:hover ul li:hover {	display:block; }
+#navMain li.opened a.selected, #navMain li.opened a:hover { background: #AC2115 url("../../images/dgac/navMain1Current.gif") no-repeat scroll right 5px; color: #FFF; display: block; }
+
+/* 1 level */
+#navMain ul li:first-child { background-image: none; }
+#navMain li { float:left; position:relative; margin-left: -1px; display:inline; display:block; z-index:5; margin-right:5px;		}
+#navMain li.opened a {	background: #FFF url("../../images/dgac/navMain1.gif") no-repeat scroll right 5px;	display: block;	}
+
+/* 2 level i 3 level*/
+#navMain li ul { border: 1px solid #818181; margin-top: -1px; }
+#navMain ul ul { left:0; position:absolute;	top:23px; width: 200px; background-color:#FFF}
+#navMain li li { background: #FFF none repeat 0 0; float:none; margin-left:0; padding-left:0; padding-bottom: 0px; }
+#navMain ul li li {	background: #FFF url("../../images/dgac/points.gif") repeat-x top;	width: 200px; }
+#navMain ul ul ul { position: absolute; top: 1px; left: 200px; display: none; 	}
+#navMain li li a, #navMain li li li a {	background-image: none;	float:none;	line-height:1.2em; margin-right:0;	padding: 2px 16px; display: block; color:#4D4D4D; border-left:0	}
+#navMain li li a:hover { background: #AC2115; color: #FFF; }
+#navMain ul ul ul li a, #navMain ul ul li:hover ul li { display: block; }
+#navMain ul ul li:hover ul { display: block; border: solid 1px #818181;  }	
+#navMain ul ul li:hover ul a:hover { background-color: #818181; }	
+#navMain li.opened li a, #navMain li.opened li a:hover  { background: none; display: block; }
+#navMain li.opened li a:hover { background-color: #333;  }
+#navMain ul ul li ul { top: 1px; border: 0px; }
+
+#navMain li.opened a.selected, #navMain li.opened a:hover { background: url("../../images/dgac/navMain1Over.gif") no-repeat scroll right 5px #AC2115; color:#FFFFFF; display:block; }
+#navMain li.opened a.selected { background-image: url("../../images/dgac/navMain1Current.gif") }
+
+/*Versió amb Javascript activat*/
+.js #navMain li ul.opened,  .js #navMain li ul.opened li ul.opened, .js #navMain li ul.opened li ul.opened li ul.opened { display:block; }
+.js #navMain li:hover ul, .js #navMain li:hover ul li:hover ul { display: none; }
+.js #navMain ul ul li ul.opened li { display: block; }
+.js #navMain ul ul li ul.opened { display: block; border: solid 1px #818181;  }	
+.js #navMain ul ul li ul.opened a:hover { background-color: #818181;}

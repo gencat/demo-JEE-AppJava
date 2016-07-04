@@ -1,0 +1,40 @@
+gicar:
+ build: ./gicarAppJava/
+ links:
+  - demo
+ ports:
+  - 80:80
+ environment:
+  PS_IP: 169.50.103.27
+  AgentConfigDocker: a6
+  ContainerHostName: prova
+  AGENTNAME: a6,provademo.gencat.cat
+  HCOGICAR: a6
+  GICARUSER: siteminder
+  GICARPWD: siteminder
+  APPSERVER_PORT_8080_TCP_ADDR: demo
+  APPSERVER_PORT_8080_TCP_PORT: 8080 
+  context: canigoJSF
+ volumes:
+  - /c/Users/canigoJSF-static:/var/www/html/canigoJSF
+db:
+  build: ./bbdd/
+  ports:
+    - 3306:3306
+  environment:
+    MYSQL_USER : user
+    MYSQL_PASSWORD : password
+    MYSQL_ROOT_PASSWORD: root
+    MYSQL_DATABASE: demo
+  volumes:
+   - /c/Users/myown/datadir:/var/lib/mysql
+demo:
+  build: ./app/
+  links:
+    - db:mybbdd
+  volumes:
+   - /c/Users/canigoJSF-dynamic:/opt/tomcat/webapps/canigoJSF
+  ports:
+   - 8080:8080
+   - 8000:8000
+
