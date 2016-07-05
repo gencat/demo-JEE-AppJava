@@ -1,0 +1,28 @@
+/* Navegació Mapes */
+.barra-controls{
+background-image: url(../../images/mobilitat/bar_controls_map.png);
+background-repeat: repeat-x;
+height: 35px;
+}
+.barra-controls .controls-zoom{
+padding: 4px 0px 4px 5px;
+float:left;
+}
+.barra-controls .controls-nav{
+padding: 4px 5px 0px 0px;
+float:right;
+}
+.barra-controls .controls-nav div{
+float:right;
+cursor:pointer;
+}
+.barra-controls .controls-zoom div{
+float:left;
+cursor:pointer;
+}
+#map_canvas img{
+width:100%;
+}
+#map_canvas{
+margin-bottom: -5px;
+}

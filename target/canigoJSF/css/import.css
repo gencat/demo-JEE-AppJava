@@ -1,0 +1,10 @@
+/* CSS Document */
+/*
+NOTA CSS:
+ inclou els css que seran utilitzats a l'aplicació
+*/
+@import url(dgac/layout.css);
+@import url(dgac/basic.css);
+@import url(dgac/navegacio.css);
+@import url(dgac/forms.css);
+@import url(primefaces-custom.css);

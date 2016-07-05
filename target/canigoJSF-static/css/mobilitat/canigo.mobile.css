@@ -1,0 +1,2787 @@
+body,a {
+	font-size: 14px;
+	font-family: Helvetica Neue, arial, sans-serif;
+}
+.ui-icon-loading {
+	background-image: url(images/ajax-loader.png) !important;
+	width: 40px !important;
+	height: 40px !important;
+	-moz-border-radius: 20px !important;
+	-webkit-border-radius: 20px !important;
+	border-radius: 20px !important;
+	background-size: 35px 35px !important;
+}
+.ui-btn-active {
+	background-image: auto;
+	background: transparent;
+}
+.ui-btn-icon-right .ui-icon {
+	right: 15px;
+}
+.ui-icon-checkbox-off, ui-icon-radio-off{
+background:white !important;
+}
+.ui-li:last-child,.ui-li.ui-field-contain:last-child {
+	border-bottom-width: 0px;
+}
+.pijama li.ui-li:nth-child(even)
+{
+	background: #F8F8F7;
+}
+.ui-icon-shadow {
+	-moz-box-shadow: 0px 0px 0 rgba(255, 255, 255, .4);
+	-webkit-box-shadow: 0px 0px 0 rgba(255, 255, 255, .4);
+	box-shadow: 0px 0px 0 rgba(255, 255, 255, .4);
+}
+
+.ui-content {
+	overflow-y: hidden;
+	padding: 0px 0px 0px 0px;
+}
+
+.ui-content .ui-listview {
+	margin: 0px;
+}
+
+.ui-btn-inner {
+padding: .6em 15px;
+
+}
+
+.ui-header,.ui-footer,.ui-page-fullscreen .ui-header,.ui-page-fullscreen .ui-footer
+	{
+	width: auto;
+}
+
+.titol-li {
+	color: #A71F14;
+	font-size: 15px;
+	font-weight: bold;
+	white-space: normal;
+}
+
+p.li-desc {
+	font-size: 15px;
+	white-space: normal;
+	margin-top: 5px;
+	color: #3C3C3C;
+}
+
+/* HEADER */
+#header {
+	min-width: 320px;
+	background-color: #FFFFFF;
+	height: 54px;
+	background-image: url(../../images/mobilitat/gencat_sub.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	padding-left:4px;
+}
+
+#header-principal {
+	background-image: url(../../images/mobilitat/gencat.png);
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 215px;
+	float: left;
+}
+
+/* HEADER ICON */
+#header-icon {
+	float: right;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+
+#contenidor {
+	width: 100%;
+	/*padding: 1.5em 6% 3em 0;*/
+}
+#contenidor-marge {
+	width: 100%;
+	margin: 15px 10px;
+}
+.width-margin {
+	margin: 0px 10px;
+}
+
+/* IMPACTE GRÀFIC */
+#impacteGrafic {
+	width: 100%;
+	min-width: 320px;
+	height: 100%;
+}
+
+#impacteGrafic #imatge1 {
+	float: left;
+}
+
+#impacteGrafic #imatge2 {
+	float: right;
+}
+
+#impacteGrafic img {
+	display: block;
+	float: left;
+}
+#impacteGrafic #imatge1{
+background-image: url(../images/actualitat/home/banner_ca_ES.png);
+background-repeat: no-repeat;
+width:124px;
+height:52px;
+}
+#impacteGrafic #imatge2{
+background-image: url(../images/actualitat/home/banner.png);
+background-repeat: no-repeat;
+width:110px;
+height:52px;
+}
+#impacteGrafic{
+background-image:url(../images/actualitat/home/barra_banner_1px_repeat.png);
+background-repeat:repeat-x;
+height:52px;
+}
+/* Barra detall header */
+.header-bar-detall {
+	background-color: #575757;
+	height: 1em;
+	color: #FFF;
+	padding: 5px 10px;
+	font-size: 12px;
+}
+.selectdata{
+text-align:right;
+}
+/* #### HOME VERTICAL ### */
+.ui-content .ui-listview-inset {
+	margin: 10px 10px;
+}
+
+.home-li {
+	font-size: 14px;
+	white-space: normal;
+}
+
+.llista-li {
+	font-size: 14px;
+	white-space: normal;
+	color: #444;
+}
+
+.ui-li .ui-btn-inner a.ui-link-inherit,.ui-li-static.ui-li {
+	padding: 15px;
+}
+
+.noicon-li {
+	padding: 4px 0px 4px 0px !important;
+}
+
+.ui-btn {
+	margin: 0px;
+}
+
+ul {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-padding-start: 0px;
+}
+
+.ul-no-style {
+	list-style-type: none;
+}
+
+.ui-custom-icon-arrow-r {
+	background-image: url(../../images/mobilitat/arrow_off.png);
+	background-repeat: no-repeat;
+}
+
+li:hover .ui-custom-icon-arrow-r {
+	background-image: url(../../images/mobilitat/arrow_red.png);
+	background-repeat: no-repeat;
+}
+
+.li-icon {
+	position: relative;
+	margin-right: 15px;
+	left: 10px;
+	height: 36px;
+	width: 52px;
+}
+
+table {
+	border-spacing: 0px;
+}
+
+.boto-seleccio-menu {
+	border: 1px solid #D2CEC5;
+	background-color: #FFF;
+	text-align: left;
+	border-radius: 0.5em;
+	moz-border-radius: 1em;
+	webkit-border-radius: 1em;
+	clear: both;
+	height: 100%;
+	padding: 5px 0px 5px 0px;
+	min-height: 38px;
+	cursor: pointer;
+}
+
+div .boto-seleccio-menu:hover {
+	background-color: #DADADA;
+}
+
+.boto-seleccio-menu .ui-custom-icon-button {
+	padding-right: 10px;
+}
+
+.boto-seleccio-menu .boto-text {
+	font-size: 14px;
+	white-space: normal;
+}
+
+div .boto-seleccio-menu:hover  .ui-custom-icon-arrow-r {
+	background-image: url(../../images/mobilitat/arrow_red.png);
+	background-repeat: no-repeat;
+}
+
+.boto-seleccio-menu table {
+	float: left;
+}
+
+.ui-custom-icon {
+	right: 10px;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 50%;
+	margin-top: -11px;
+}
+
+.ui-custom-icon-button {
+	right: 10px;
+	width: 24px;
+	height: 24px;
+	margin-top: 8px;
+	float: right;
+}
+
+.contingut {
+	background-color: #f0f0f0;
+	margin-bottom: -1px;
+	padding-bottom:61px; /* alçada peu de pàgina*/
+	height: 100%;
+}
+.contingut-marge{
+	background-color: #f0f0f0;
+	margin-bottom: -1px;
+	padding: 0 10px;
+	height: 100%;
+}
+.contingut-blanc {
+	background-color: #FFFFFF;
+	margin-bottom: -1px;
+}
+
+h2 { /*color:#AC2115;*/
+	color: #4D4D4D;
+}
+
+.veure-mes {
+	text-decoration: none;
+}
+
+.veure-mes div {
+	background: #DDD;
+	text-align: center;
+	color: #8E8E8E;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 6px 0px 6px 0px;
+}
+
+/* #### FOOTER  #### */
+.tab-gencat {
+	background-image: url(../../images/mobilitat/footer/gencat-mobi.png);
+	background-repeat: no-repeat;
+	width: 59px;
+	height: 31px;
+	margin-top: -1px;
+	display: inline-block;
+}
+
+.footer {
+	height: 60px;
+	background-color: #EFEFEF;
+	font-size: 11px;
+	border-top: 1px solid #CCC;
+	position: absolute !important;
+bottom: 0;
+width: 100%;
+padding: 0 15px 0 15px;
+}
+.footer .ui-shadow {
+-moz-box-shadow: 0px 0px 0px /*{global-box-shadow-size}*/ rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+-webkit-box-shadow: 0px 0px 0px /*{global-box-shadow-size}*/ rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+box-shadow: 0px 0px 0px /*{global-box-shadow-size}*/ rgba(0,0,0,.3) /*{global-box-shadow-color}*/;
+}
+a.idioma, a.idioma.ui-btn-hover-z {
+	background-color: #788291;
+	margin-right: 5px !important;
+	color: #FFFFFF !important;
+}
+
+.idioma span,.versio span {
+	font-size: 11px;
+	font-weight: bold;
+}
+
+
+.versio, .versio.ui-btn-hover-z {
+	color: #FFFFFF !important;
+	background-color: #455268;
+}
+
+a.idioma, .versio {
+	border: 0px solid transparent;
+}
+a.idioma.ui-btn-hover-z, .versio.ui-btn-hover-z {
+	border: 0px solid transparent;
+	font-size: 12px;
+	background-image: none;
+	font-weight:normal;
+}
+.line2 {
+	margin-bottom: 5px;
+	display: inline-block;
+	width: 100%;
+}
+
+.buttons {
+	float: right;
+	font-size: 11px;
+	padding-right: 30px;
+}
+
+
+.copyright {
+	float: left;
+	margin-top: 5px;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.ul-text {
+	-webkit-padding-start: 20px;
+}
+
+/* HOME TIPUS HORITZONTAL*/
+div.linia-menu-horitzontal {
+	height: 80px;
+	text-align: center;
+	margin: 2px;
+}
+
+.menu-horitzontal .imagedesc {
+	margin-top: 50px;
+	text-decoration: none;
+	color: #3C3C3C;
+	font-family: Helvetica Neue;
+	font-size: 14px;
+}
+
+.menu-horitzontal a {
+	text-decoration: none;
+}
+
+div.iconfav.favorits .imagedesc {
+	margin-top: 55px;
+}
+
+.menu-horitzontal {
+	margin: auto;
+	width: 275px;
+}
+
+.menu-horitzontal .iconfav {
+	width: 70px;
+	float: left;
+	margin: 10px;
+}
+
+.external-link {
+	width: 15px;
+	height: 7px;
+	background-image: url(../../images/mobilitat/enlace.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 20px;
+}
+
+.center {
+	text-align: center;
+}
+
+.external-link-button {
+	background-image: url(../../images/mobilitat/enlace.png) !important;
+	background-repeat: no-repeat;
+	background-position: right;
+	margin-right: 20px;
+}
+
+/* #### BARRA DE NAVEGACIÓ ####*/
+.barra-navegacio {
+	background-image: url(../../images/mobilitat/navigation_bar.png);
+	background-repeat: repeat-x;
+	height: 44px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.tornar {
+	margin-left: 10px;
+	margin-top: 5px;
+	float: left;
+	background-image: url(../../images/mobilitat/back.png);
+	background-repeat: no-repeat;
+	width: 65px;
+	height: 32px;
+}
+
+.menu {
+	margin-right: 10px;
+	margin-top: 5px;
+	float: right;
+	background-image: url(../../images/mobilitat/home.png);
+	background-repeat: no-repeat;
+	width: 60px;
+	height: 32px;
+}
+
+.barra-navegacio a {
+	text-decoration: none;
+}
+
+.barra-navegacio span {
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.barra-navegacio .tornar span {
+	margin-left: 5px;
+	line-height: 30px;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+.barra-navegacio .menu span {
+	line-height: 30px;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+.titol-seccio {
+	line-height: 42px;
+	color: #4D4D4D;
+	font-size: 20px;
+}
+
+
+.iconesli { /*left: 10px;*/
+/*	height: 36px;
+	width: 52px;
+	*/
+	position: relative;
+	margin-right: 15px;
+}
+
+/* Llista continguts */
+.llistat-continguts li {
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+	background-color: #F8F8F7;
+}
+
+.llistat-continguts li:nth-child(even) {
+	background-color: #FFFFFF;
+}
+
+.ui-listview li.ui-li-divider:hover
+{
+	background: #747474 !important;
+}
+.ui-listview li:hover {
+	background: #DADADA !important;
+}
+.ui-li-divider, .ui-li-static{
+background-color:#ffffff;
+}
+.marge {
+	padding: 5px;
+	text-align: center;
+}
+
+/* LLista tipus documents adjunts */
+.tipusfitxers-li {
+	left: 15px;
+	height: 36px;
+	width: 52px;
+	position: relative;
+	margin-right: 20px;
+}
+
+.llistat-arxius li {
+	padding-right: 15px;
+	padding-left: 15px;
+	background-color: #F8F8F7;
+}
+
+.llistat-arxius li:nth-child(even) {
+	background-color: #FFFFFF;
+}
+
+/* Llista idiomes */
+.llista-idioma li {
+	padding-right: 15px;
+	padding-left: 15px;
+	background-color: #F8F8F7;
+}
+
+.llista-idioma li:nth-child(even) {
+	background-color: #FFFFFF;
+}
+
+.llista-idioma div {
+	margin-left: 20px;
+}
+
+/* Tic selecció idioma */
+.ui-custom-tic {
+	right: 10px;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 50%;
+	margin-top: -11px;
+}
+
+.ui-custom-tic-icon {
+	background-image: url(../../images/mobilitat/check_active.png);
+	background-repeat: no-repeat;
+}
+
+/*
+li:hover .ui-custom-tic-icon{
+background-image: url(../../images/mobilitat/check_white_active.png);
+background-repeat: no-repeat;
+}
+*/
+/* FORMULARI LI */
+.formulari .titol-elements-llista {
+	margin-left: 15px;
+}
+
+.formulari li {
+	background-color: #FFFFFF;
+}
+
+.formulari table {
+	width: 100%;
+}
+
+.formulari .selecciona-texttd {
+	text-align: right;
+	color: #8E8E8E;
+	font-size: 14px;
+	padding-right: 35px;
+}
+
+.formulari .no-icon-a {
+	padding-right: 10px !important;
+}
+
+.formulari .noicon-li .selecciona-texttd {
+	padding-right: 0px;
+}
+
+
+.esborra-dades {
+	text-align: right;
+	margin: -5px 20px 15px 0px;
+	font-size: 14px;
+	color: #8E8E8E;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+
+.esborradiv {
+	height: 1em;
+}
+
+/* CAPÇALERA */
+.capcalera-icon {
+	left: 8px;
+	height: 36px;
+	width: 52px;
+	position: relative;
+	margin-right: 20px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.titol-capcalera {
+	font-size: 16px;
+	white-space: normal;
+	font-weight: bold;
+}
+
+/* ### BOTONS DE NAVEGACIÓ ### */
+.botons-navegacio {
+	min-height: 40px;
+}
+
+.botons-navegacio .submitboto {
+	width: 100%;
+}
+
+.botons-navegacio .boto-esq {
+	float: left;
+	width: 48%;
+}
+
+.botons-navegacio .boto-drt {
+	float: right;
+	width: 48%;
+}
+
+.botons-navegacio .boto-esq a,.botons-navegacio .boto-drt a {
+	width: 100%;
+}
+
+.botons-navegacio {
+	text-align: center;
+}
+
+.botons-navegacio .ui-btn-corner-all {
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+		to(#F1F1F0) ); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #F1F1F0);
+	/* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #FFFFFF, #F1F1F0);
+	/* FF3.6 */
+	background-image: -ms-linear-gradient(top, #FFFFFF, #F1F1F0);
+	/* IE10 */
+	background-image: -o-linear-gradient(top, #FFFFFF, #F1F1F0);
+	/* Opera 11.10+ */
+	background-image: linear-gradient(top, #FFFFFF, #F1F1F0);
+}
+
+.botons-navegacio .submitdiv .ui-btn-corner-all {
+	background-image: url(../../images/mobilitat/form_button.png);
+	background-repeat: repeat-x;
+}
+.botons-navegacio .submitdiv{
+height:32px;
+}
+.botons-nagevacio a {
+	width: 100%;
+}
+.boto-drt span,.boto-esq span {
+	min-height: 15px;
+}
+.submitdiv {
+	margin: 0px 10px 15px 10px;
+}
+
+.button {
+	margin: 0px 10px 15px 10px;
+}
+
+.dreta {
+	padding-right: 10px;
+	float: right;
+}
+
+.boto-temps-a {
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	border-radius: 0.5em;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+		to(#F1F1F0) ); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #F1F1F0);
+	/* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #FFFFFF, #F1F1F0);
+	/* FF3.6 */
+	background-image: -ms-linear-gradient(top, #FFFFFF, #F1F1F0);
+	/* IE10 */
+	background-image: -o-linear-gradient(top, #FFFFFF, #F1F1F0);
+	/* Opera 11.10+ */
+	background-image: linear-gradient(top, #FFFFFF, #F1F1F0);
+}
+
+.off {
+	filter: alpha(opacity = 50);
+	opacity: 0.5;
+	cursor: auto;
+}
+
+.pre-time {
+	background-image: url(../images/rodalies/base/time_button.png)
+		!important;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.post-time {
+	background-image: url(../images/rodalies/base/time_button.png)
+		!important;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.boto-temps.ant {
+	float: left;
+	width:48%;
+}
+
+.boto-temps.post {
+	float: right;
+	width:48%;
+}
+
+/* Llista filtrada */
+.llista-filtrada li.ui-li.btn-up-c {
+	border-top: 1px solid #CCC;
+}
+
+form.ui-listview-filter.ui-bar-c.llista-filtrada-width {
+	margin: 0 3px;
+}
+
+.llista-filtrada li:nth-child(odd) {
+	background: #F8F8F7;
+}
+
+.llista-width li:nth-child(odd) {
+	background: #F8F8F7;
+}
+.ui-input-search{
+padding:0px;
+}
+.llista-filtrada .ui-li .ui-btn-inner a.ui-link-inherit,.llista-filtrada  .ui-li-static.ui-li
+	{
+	white-space: normal;
+	color: #3C3C3C;
+	font-size: 15px;
+	padding: 0.7em 15px 0.7em 15px;
+}
+
+/* CAPÇALERA WIDTH 100%*/
+/* Titol */
+.tipusfitxers-li {
+	left: 15px;
+	height: 36px;
+	width: 52px;
+	position: relative;
+	margin-right: 20px;
+}
+
+.llistat-arxius li {
+	padding-right: 15px;
+	padding-left: 15px;
+	background-color: #F8F8F7;
+}
+
+.llistat-arxius li:nth-child(even) {
+	background-color: #FFFFFF;
+}
+
+/* Separadors */
+.separador-quadruple-width {
+	height: 1px;
+	border-top: 3px double #CCC;
+	border-bottom: 3px double #CCC;
+	margin-top: 1px;
+	-webkit-margin-before: 0.0em;
+	-webkit-margin-after: 0.0em;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+}
+
+.separador-flotant {
+	border: 1px solid #CCC;
+	margin-left: 15px;
+	margin-right: 15px;
+	clear: both;
+}
+
+.separador-solid {
+	border: 1px solid #CCC;
+	clear: both;
+}
+
+.separador-punts {
+	border: 1px dotted #CCC;
+	clear: both;
+}
+
+/* PADDINGs llistats */
+.ui-li .ui-btn-text a.ui-link-inherit {
+	white-space: normal;
+}
+
+.llista-filtrada .ui-btn-text {
+	padding-right: 20px;
+}
+
+.llistat-continguts .ui-btn-text {
+	padding-right: 35px;
+}
+
+.menu-vertical li {
+white-space: normal;
+display: block;
+height: 100%;
+clear: both;	
+}
+
+.menu-vertical .ui-btn-text {
+	padding-right: 20px;
+}
+
+.oblique-text {
+	font-style: oblique;
+}
+
+/* TABS FORMULARI */
+.tabs-formulari {
+	margin: 0em 9px -1.7em 9px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	color: #3C3C3C;
+	font-size: 15px;
+	font-weight: bold;
+	height: 3em;
+}
+
+.cerca-formulari {
+	margin-bottom: -1.4em;
+}
+
+.titol-elements-llista.vermell {
+	color: #AC2115;
+}
+
+.marge-div {
+	margin: 0px 10px;
+}
+
+.anotacio {
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.tabs-formulari div {
+	border: 1px solid #CCC;
+	border-bottom-width: 0px;
+	border-top-left-radius: 0.6em 0.6em;
+	border-top-right-radius: 0.6em 0.6em;
+	padding: 8px 0px 8px 0px;
+	cursor: pointer;
+	height: 2em;
+}
+
+.tabs-formulari div:hover {
+	background: #DADADA !important;
+}
+
+.tabs-formulari table {
+	width: 100%;
+}
+
+.tabs-formulari td {
+	width: 33%;
+}
+
+div.pestanya {
+	display: none;
+}
+
+div.pestanya_activa {
+	display: block;
+}
+
+a.actiu div {
+	background-color: #FFFFFF !important;
+}
+
+.input-desc {
+	width: 90px;
+}
+
+input {
+	width: 100%;
+}
+
+.input-td {
+	padding-right: 15px;
+	padding-left: 10px;
+}
+
+.home-icon-search {
+	background-image: url(../../images/mobilitat/home_icon_search.png);
+	background-repeat: no-repeat;
+	width: 110px;
+	height: 31px;
+}
+
+/* Navegació Mapes */
+.barra-controls {
+	background-image: url(../../images/mobilitat/bar_controls_map.png);
+	background-repeat: repeat-x;
+	height: 35px;
+}
+
+.barra-controls .controls-zoom {
+	padding: 4px 0px 4px 5px;
+	float: left;
+}
+
+.barra-controls .controls-nav {
+	padding: 4px 5px 0px 0px;
+	float: right;
+}
+
+.barra-controls .controls-nav div {
+	float: right;
+	cursor: pointer;
+}
+
+.barra-controls .controls-zoom div {
+	float: left;
+	cursor: pointer;
+}
+
+#map_canvas img {
+	width: 100%;
+}
+
+#map_canvas {
+	margin-bottom: -5px;
+}
+
+/* TAULA */
+table.taula {
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	color: #788291;
+}
+
+table.taula th {
+	text-align: left;
+	background-color: #DADADA;
+	color: #707070;
+	padding-left: 5px;
+}
+
+table.taula td {
+	padding-left: 5px;
+}
+
+table.taula tr:nth-child(odd) {
+	background-color: #eee;
+}
+
+table.taula  tr:nth-child(even) {
+	background-color: #fff;
+}
+
+table.taula td.important {
+	color: #3C3C3C;
+}
+
+table.taula td.negatives {
+	color: #BE0202;
+}
+
+.icons-etapes {
+	padding: 2px 0px 2px 0px;
+}
+
+.tdicon-fav-dreta {
+	width: 65px;
+}
+
+.icons-etapes img {
+	padding-right: 3px;
+}
+
+/* SLIDER */
+/*
+.ui-slider .ui-btn-corner-left{
+-moz-border-radius-topleft: 0.4em;
+-webkit-border-top-left-radius: 0.4em;
+border-top-left-radius: 0.4em;
+-moz-border-radius-bottomleft: 0.4em;
+-webkit-border-bottom-left-radius: 0.4em;
+border-bottom-left-radius: 0.4em;
+}
+.ui-slider+.ui-btn-corner-all {
+moz-border-radius: 0.4em;
+-webkit-border-radius: 0.4em;
+border-radius: 0.4em;
+}
+.ui-slider .ui-btn-corner-right{
+moz-border-radius-topright: 0.4em;
+-webkit-border-top-right-radius: 0.4em;
+border-top-right-radius: 0.4em;
+-moz-border-radius-bottomright: 0.4em;
+-webkit-border-bottom-right-radius: 0.4em;
+border-bottom-right-radius: 0.4em;
+}
+.ui-slider .ui-btn-active{
+background-image: -webkit-gradient(linear, left top, left bottom, from(#761F0C), to(#B93F2F));
+background-image: -webkit-linear-gradient(top, #761F0C, #B93F2F);
+background-image: -moz-linear-gradient(top, #761F0C, #B93F2F);
+background-image: -ms-linear-gradient(top, #761F0C, #B93F2F);
+background-image: -o-linear-gradient(top, #761F0C, #B93F2F);
+background-image: linear-gradient(top, #761F0C, #B93F2F);
+background:#761F0C;
+border: 0;
+}
+.ui-slider span.ui-slider-label-a{
+left: -100%;
+}*/
+/* HOME */
+.bloc-titol-home {
+	width: 100%;
+	min-width: 320px;
+	height: 100%;
+}
+
+.titol-transit {
+	background-image: url(../images/home/transit/bg_transit.png);
+	background-repeat: repeat-x;
+	height: 68px;
+}
+
+.titol-transit .imatge1 {
+	float: left;
+	background-image: url(../images/home/transit/left_transit_ca_ES.png);
+	background-repeat: no-repeat;
+	height: 68px;
+	width: 217px;
+}
+
+.titol-transit .imatge2 {
+	float: right;
+	background-image: url(../images/home/transit/right_transit.png);
+	background-repeat: no-repeat;
+	height: 68px;
+	width: 72px;
+}
+
+.titol-equipaments {
+	background-image: url(../images/home/equipaments/bg_equipaments.png);
+	background-repeat: repeat-x;
+	height: 68px;
+}
+
+.titol-equipaments .imatge1 {
+	float: left;
+	background-image:
+		url(../images/home/equipaments/left_equipaments_ca_ES.png);
+	background-repeat: no-repeat;
+	height: 68px;
+	width: 217px;
+}
+
+.titol-equipaments .imatge2 {
+	float: right;
+	background-image: url(../images/home/equipaments/right_equipaments.png);
+	background-repeat: no-repeat;
+	height: 68px;
+	width: 72px;
+}
+
+.bloc-serveis {
+	background-image: url(../images/home/impacte/bg_serveis.png);
+	background-repeat: repeat-x;
+	height: 30px;
+}
+
+.bloc-serveis .text {
+	color: #FFF;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 10px;
+	padding-top: 5px;
+}
+
+/* ICON FAV CERCA*/
+.icon-fav {
+	background-image: url(../images/telefons/especial/favorites_on.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding: 10px 0px 10px 10px;
+	float: right;
+	width: 59px;
+	height: 40px;
+	margin-top: -8px;
+}
+
+div.botons-navegacio.capcalera-icon-fav {
+	float: left;
+	width: 100%;
+}
+
+.icon-fav-marg {
+	margin-right: 50xp;
+}
+
+.capcalera-telefons {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+		to(#F1F1F0) ); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #F1F1F0);
+	/* Chrome 10+, Saf5.1+ */
+	background-image: -moz-linear-gradient(top, #FFFFFF, #F1F1F0);
+	/* FF3.6 */
+	background-image: -ms-linear-gradient(top, #FFFFFF, #F1F1F0);
+	/* IE10 */
+	background-image: -o-linear-gradient(top, #FFFFFF, #F1F1F0);
+	/* Opera 11.10+ */
+	background-image: linear-gradient(top, #FFFFFF, #F1F1F0);
+	border: 1px solid #CCC;
+}
+
+/* Titol cerca */
+.titol-cerca {
+	margin: 8px 10px;
+	font-weight: bold;
+	font-size: 15px;
+	color: #3C3C3C;
+}
+
+.link-list-select {
+	color: #3C3C3C !important;
+	text-decoration: none;
+}
+
+/* Search Form */
+.llista-filtrada-width {
+	margin: 0;
+	background: transparent;
+}
+
+.llista-filtrada-width table {
+	width: 100%;
+}
+
+.llista-filtrada-width .ui-btn-corner-all {
+	moz-border-radius: 0.4em;
+	-webkit-border-radius: 0.4em;
+	border-radius: 0.4em;
+}
+
+.llista-filtrada-width .ui-input-search {
+	/*padding: 0 15px;*/
+	padding: 0 0px;
+}
+
+.ui-listview-filter {
+margin:0px;
+}
+.ui-input-search input.ui-input-text {
+width: 100%;
+background-color: white;
+}
+
+/* LLista 100% width*/
+.llista-width {
+	margin: 0px !important;
+}
+
+.llista-index {
+	margin: 0px !important;
+}
+
+.tdicon-list {
+	width: 53px;
+}
+
+.td-small-icon-list {
+	width: 25px;
+}
+
+.contingut-recuadre {
+	margin: 0.5em 10px;
+	-moz-border-radius: .6em;
+	-webkit-border-radius: .6em;
+	border-radius: .6em;
+	border: 1px solid #CCC;
+	background: #FFF;
+	font-weight: bold;
+	color: #444;
+	text-shadow: 0 1px 1px #F6F6F6;
+	padding: 5px 5px 5px 5px !important;
+	cursor: auto !important;
+}
+
+.contingut-recuadre p {
+	-webkit-margin-after: 0;
+	-webkit-margin-before: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.boto-filtre-capcalera {
+	margin: 0.6em 10px;
+	border: 1px solid #CCC;
+	background: transparent;
+	font-weight: bold;
+	color: #444;
+	-moz-border-radius: .6em;
+	-webkit-border-radius: .6em;
+	border-radius: .6em;
+	text-shadow: 0 1px 1px #F6F6F6;
+	padding: 5px 5px 5px 5px !important;
+	float: right;
+}
+
+.boto-cap {
+	text-decoration: none;
+}
+
+.botons-temps {
+	min-height: 20px;
+}
+
+.contenidor-rat {
+	background-color: #FCD9D9;
+	background-image: -webkit-repeating-linear-gradient(-45deg, transparent, transparent 1px,
+		rgba(255, 255, 255, .5) 1px, rgba(255, 255, 255, .5) 2px );
+}
+
+/* DEFAULT ICONS */
+.default-icon .ui-icon {
+	background: #666;
+	background: rgba(0, 0, 0, .4);
+	background-image: url(images/icons-18-white.png);
+	background-repeat: no-repeat;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	border-radius: 9px;
+}
+
+.default-icon.icon-dreta .ui-collapsible-heading a span.ui-btn {
+	left: auto;
+	right: 10px;
+}
+
+/* Collapsible content */
+.ui-collapsible {
+margin: .5em 20px;
+}
+.ui-collapsible-heading a {
+border: 1px solid #CCC;
+}
+.collapsible-button {
+	padding: 0px 20px;
+}
+
+.collapsible-button .ui-collapsible-heading a .ui-btn-inner {
+	padding: 10px;
+}
+.ui-collapsible a{
+background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
+ to(#F1F1F0) );
+background-image: -webkit-linear-gradient(top, #FFFFFF, #F1F1F0);
+background-image: -moz-linear-gradient(top, #FFFFFF, #F1F1F0);
+background-image: -ms-linear-gradient(top, #FFFFFF, #F1F1F0);
+background-image: -o-linear-gradient(top, #FFFFFF, #F1F1F0);
+background-image: linear-gradient(top, #FFFFFF, #F1F1F0);	
+}
+
+/* ICONES */
+.delete-icons {
+	background-image: url(../../images/mobilitat/delete.png);
+	background-repeat: no-repeat;
+}
+
+/* SPRITES GENÈRICS */
+/* Icones socials*/
+.social-icons {
+	background-image: url(../../images/mobilitat/social-icons.png);
+	background-repeat: no-repeat;
+}
+
+.delete-icon {
+	width: 23px;
+	height: 23px;
+}
+
+.social-email {
+	background-position: 0 0;
+	width: 32px;
+	height: 20px;
+}
+
+.social-facebook {
+	background-position: 0 -21px;
+	width: 32px;
+	height: 20px;
+}
+
+.social-settings {
+	background-position: 0 -42px;
+	width: 32px;
+	height: 20px;
+}
+
+.social-sms {
+	background-position: 0 -63px;
+	width: 32px;
+	height: 20px;
+}
+
+.social-social_network {
+	background-position: 0 -84px;
+	width: 32px;
+	height: 20px;
+}
+
+.social-twitter {
+	background-position: 0 -105px;
+	width: 32px;
+	height: 20px;
+}
+
+/* Misc icones 52px*/
+.misc-icons {
+	background-image: url(../../images/mobilitat/misc-icons.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.misc-attach {
+	background-position: 0 0;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-attach_press {
+	background-position: 0 -37px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-back_search {
+	background-position: 0 -74px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-cat {
+	background-position: 0 -111px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-cat_press {
+	background-position: 0 -148px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-email_list_button {
+	background-position: 0 -185px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-pdf {
+	background-position: 0 -222px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-search_list {
+	background-position: 0 -259px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-search_list_press {
+	background-position: 0 -296px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-situation {
+	background-position: 0 -333px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-situation_in_map {
+	background-position: 0 -370px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-situation_in_map_press {
+	background-position: 0 -407px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-situation_point {
+	background-position: 0 -444px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-situation_point_press {
+	background-position: 0 -481px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-situation_press {
+	background-position: 0 -518px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-sms_list_button {
+	background-position: 0 -555px;
+	width: 52px;
+	height: 36px;
+}
+
+.misc-telefon {
+	background-position: 0 -592px;
+	width: 52px;
+	height: 36px;
+}
+
+.a_prop_adreca_off {
+	background-position: 0 -628px;
+	width: 52px;
+	height: 36px;
+}
+
+.a_prop_adreca_on {
+	background-position: 0 -664px;
+	width: 52px;
+	height: 36px;
+}
+
+.altres_off {
+	background-position: 0 -701px;
+	width: 52px;
+	height: 36px;
+}
+
+.altres_on {
+	background-position: 0 -738px;
+	width: 52px;
+	height: 36px;
+}
+
+.totes_off {
+	background-position: 0 -774px;
+	width: 52px;
+	height: 36px;
+}
+
+.totes_on {
+	background-position: 0 -811px;
+	width: 52px;
+	height: 36px;
+}
+
+/* Icones Categories Llistats */
+.categories-icons {
+	background-image: url(../../images/mobilitat/categories-llista.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.categories-icons+span {
+	/*
+	position: absolute;
+	top: 50%;
+	margin-top: -9px;
+	*/
+	left: 72px;
+	line-height: 30px;
+}
+
+li:hover .categories-administracio_publica,.categories-administracio_publica_off
+	{
+	background-position: 0 0;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-administracio_publica {
+	background-position: 0 -37px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-agricultura,.categories-agricultura_off {
+	background-position: 0 -74px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-agricultura {
+	background-position: 0 -111px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-associacionisme,.categories-associacionisme_off {
+	background-position: 0 -148px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-associacionisme {
+	background-position: 0 -185px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-comerc,.categories-comerc_off {
+	background-position: 0 -222px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-comerc {
+	background-position: 0 -259px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-cultura_lleure,.categories-cultura_lleure_off {
+	background-position: 0 -296px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-cultura_lleure {
+	background-position: 0 -333px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-cultura,.categories-cultura_off {
+	background-position: 0 -370px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-cultura {
+	background-position: 0 -407px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-cultura,.categories-economia_off {
+	background-position: 0 -444px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-economia {
+	background-position: 0 -481px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-educacio,.categories-educacio_off {
+	background-position: 0 -518px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-educacio {
+	background-position: 0 -555px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-empresa_industria_energia,.categories-empresa_industria_energia_off
+	{
+	background-position: 0 -592px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-empresa_industria_energia {
+	background-position: 0 -629px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-habitatge,.categories-habitatge_off {
+	background-position: 0 -666px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-habitatge {
+	background-position: 0 -703px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-justicia,.categories-justicia_off {
+	background-position: 0 -740px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-justicia {
+	background-position: 0 -777px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-llengua_comunicacio,.categories-llengua_comunicacio_off
+	{
+	background-position: 0 -814px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-llengua_comunicacio {
+	background-position: 0 -851px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-medi_ambient,.categories-medi_ambient_off {
+	background-position: 0 -888px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-medi_ambient {
+	background-position: 0 -925px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-mobilitat_transport,.categories-mobilitat_transport_off
+	{
+	background-position: 0 -962px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-mobilitat {
+	background-position: 0 -999px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-salut,.categories-salut_off {
+	background-position: 0 -1036px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-salut {
+	background-position: 0 -1073px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-seguretat,.categories-seguretat_off {
+	background-position: 0 -1110px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-seguretat {
+	background-position: 0 -1147px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-serveis_socials,.categories-serveis_socials_off {
+	background-position: 0 -1184px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-serveis_socials {
+	background-position: 0 -1221px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-societat_ciutadania_families,.categories-societat_ciutadania_families_off
+	{
+	background-position: 0 -1258px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-societat_ciutadania_families {
+	background-position: 0 -1295px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-tecnologia_recerca_innovacio,.categories-tecnologia_recerca_innovacio_off
+	{
+	background-position: 0 -1332px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-tecnologia_recerca_innovacio {
+	background-position: 0 -1369px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-territori_paisatge_urbanisme,.categories-territori_paisatge_urbanisme_off
+	{
+	background-position: 0 -1406px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-territori_paisatge_urbanisme {
+	background-position: 0 -1443px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-treball,.categories-treball_off {
+	background-position: 0 -1480px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-treball {
+	background-position: 0 -1517px;
+	width: 52px;
+	height: 36px;
+}
+
+li:hover .categories-turisme,.categories-turisme_off {
+	background-position: 0 -1554px;
+	width: 52px;
+	height: 36px;
+}
+
+.categories-turisme {
+	background-position: 0 -1591px;
+	width: 52px;
+	height: 36px;
+}
+
+/* Icones Categories Capçalera */
+.capcalera-icons {
+	background-image: url(../../images/mobilitat/capcalera-icons.png);
+	background-repeat: no-repeat;
+	float:left;
+}
+
+.capcalera-administracio_publica_off {
+	background-position: 0 0;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-administracio_publica {
+	background-position: 0 -67px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-agricultura_off {
+	background-position: 0 -134px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-agricultura {
+	background-position: 0 -201px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-associacionisme_off {
+	background-position: 0 -268px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-associacionisme {
+	background-position: 0 -335px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-comerc_off {
+	background-position: 0 -402px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-comerc {
+	background-position: 0 -469px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-cultura_lleure_off {
+	background-position: 0 -536px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-cultura_lleure {
+	background-position: 0 -603px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-cultura_off {
+	background-position: 0 -670px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-cultura {
+	background-position: 0 -737px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-economia_off {
+	background-position: 0 -804px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-economia {
+	background-position: 0 -871px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-educacio_off {
+	background-position: 0 -938px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-educacio {
+	background-position: 0 -1005px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-empresa_industria_energia_off {
+	background-position: 0 -1072px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-empresa_industria_energia {
+	background-position: 0 -1139px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-habitatge_off {
+	background-position: 0 -1206px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-habitatge {
+	background-position: 0 -1273px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-justicia_off {
+	background-position: 0 -1340px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-justicia {
+	background-position: 0 -1407px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-llengua_comunicacio_off {
+	background-position: 0 -1474px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-llengua_comunicacio {
+	background-position: 0 -1541px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-medi_ambient_off {
+	background-position: 0 -1608px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-medi_ambient {
+	background-position: 0 -1675px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-mobilitat_transport_off {
+	background-position: 0 -1742px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-mobilitat-transport {
+	background-position: 0 -1809px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-salut_off {
+	background-position: 0 -1876px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-salut {
+	background-position: 0 -1943px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-seguretat_off {
+	background-position: -67px 0;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-seguretat {
+	background-position: -67px -67px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-serveis_socials_off {
+	background-position: -67px -134px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-serveis_socials {
+	background-position: -67px -201px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-societat_ciutadania_families_off {
+	background-position: -67px -268px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-societat_ciutadania_families {
+	background-position: -67px -335px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-tecnologia_recerca_innovacio_off {
+	background-position: -67px -402px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-tecnologia_recerca_innovacio {
+	background-position: -67px -469px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-territori_paisatge_urbanisme_off {
+	background-position: -67px -536px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-territori_paisatge_urbanisme {
+	background-position: -67px -603px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-treball_off {
+	background-position: -67px -670px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-treball {
+	background-position: -67px -737px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-turisme_off {
+	background-position: -67px -804px;
+	width: 66px;
+	height: 66px;
+}
+
+.capcalera-turisme {
+	background-position: -67px -871px;
+	width: 66px;
+	height: 66px;
+}
+
+/* Comarques */
+.comarques-icon {
+	background-image: url(../../images/mobilitat/comarques-icons.png);
+	background-repeat: no-repeat;
+	float:left;
+}
+
+.comarques-alt_camp_off {
+	background-position: 0 0;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-alt_camp {
+	background-position: 0 -43px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-alt_emporda_off {
+	background-position: 0 -86px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-alt_emporda {
+	background-position: 0 -129px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-alt_penedes_off {
+	background-position: 0 -172px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-alt_penedes {
+	background-position: 0 -215px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-alt_urgell_off {
+	background-position: 0 -258px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-alt_urgell {
+	background-position: 0 -301px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-alta_ribagorca_off {
+	background-position: 0 -344px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-alta_ribagorca {
+	background-position: 0 -387px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-anoia_off {
+	background-position: 0 -430px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-anoia {
+	background-position: 0 -473px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-bages_off {
+	background-position: 0 -516px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-bages {
+	background-position: 0 -559px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-baix_camp_off {
+	background-position: 0 -602px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-baix_camp {
+	background-position: 0 -645px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-baix_ebre_off {
+	background-position: 0 -688px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-baix_ebre {
+	background-position: 0 -731px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-baix_emporda_off {
+	background-position: 0 -774px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-baix_emporda {
+	background-position: 0 -817px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-baix_llobregat_off {
+	background-position: 0 -860px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-baix_llobregat {
+	background-position: 0 -903px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-baix_penedes_off {
+	background-position: 0 -946px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-baix_penedes {
+	background-position: 0 -989px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-barcelones_off {
+	background-position: 0 -1032px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-barcelones {
+	background-position: 0 -1075px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-bergueda_off {
+	background-position: 0 -1118px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-bergueda {
+	background-position: 0 -1161px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-cerdanya_off {
+	background-position: 0 -1204px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-cerdanya {
+	background-position: 0 -1247px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-conca_de_barbera_off {
+	background-position: 0 -1290px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-conca_de_barbera {
+	background-position: 0 -1333px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-garraf_off {
+	background-position: 0 -1376px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-garraf {
+	background-position: 0 -1419px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-garrigues_off {
+	background-position: 0 -1462px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-garrigues {
+	background-position: 0 -1505px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-garrotxa_off {
+	background-position: 0 -1548px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-garrotxa {
+	background-position: 0 -1591px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-girones_off {
+	background-position: 0 -1634px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-girones {
+	background-position: 0 -1677px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-maresme_off {
+	background-position: 0 -1720px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-maresme {
+	background-position: 0 -1763px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-montsia_off {
+	background-position: 0 -1806px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-montsia {
+	background-position: 0 -1849px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-noguera_off {
+	background-position: 0 -1892px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-noguera {
+	background-position: 0 -1935px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-osona_off {
+	background-position: 0 -1978px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-osona {
+	background-position: -43px 0;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-pallars_jussa_off {
+	background-position: -43px -43px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-pallars_jussa {
+	background-position: -43px -86px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-pallars_sobira_off {
+	background-position: -43px -129px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-pallars_sobira {
+	background-position: -43px -172px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-pla_d_urgell_off {
+	background-position: -43px -215px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-pla_d_urgell {
+	background-position: -43px -258px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-pla_de_l_estany_off {
+	background-position: -43px -301px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-pla_de_l_estany {
+	background-position: -43px -344px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-priorat_off {
+	background-position: -43px -387px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-priorat {
+	background-position: -43px -430px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-riera_d_ebre_off {
+	background-position: -43px -473px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-riera_d_ebre {
+	background-position: -43px -516px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-ripolles_off {
+	background-position: -43px -559px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-ripolles {
+	background-position: -43px -602px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-segarra_off {
+	background-position: -43px -645px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-segarra {
+	background-position: -43px -688px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-segria_off {
+	background-position: -43px -731px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-segria {
+	background-position: -43px -774px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-selva_off {
+	background-position: -43px -817px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-selva {
+	background-position: -43px -860px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-solsones_off {
+	background-position: -43px -903px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-solsones {
+	background-position: -43px -946px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-tarragones_off {
+	background-position: -43px -989px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-tarragones {
+	background-position: -43px -1032px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-terra_alta_off {
+	background-position: -43px -1075px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-terra_alta {
+	background-position: -43px -1118px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-urgell_off {
+	background-position: -43px -1161px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-urgell {
+	background-position: -43px -1204px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-val_d_aran_off {
+	background-position: -43px -1247px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-val_d_aran {
+	background-position: -43px -1290px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-valles_occidental_off {
+	background-position: -43px -1333px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-valles_occidental {
+	background-position: -43px -1376px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-valles_oriental_off {
+	background-position: -43px -1419px;
+	width: 42px;
+	height: 42px;
+}
+
+.comarques-valles_oriental {
+	background-position: -43px -1462px;
+	width: 42px;
+	height: 42px;
+}
+
+/* ### ICONES TIPUS DOCUMENTS */
+.tipusdocument {
+	background-image: url(../../images/mobilitat/tipus-documents.png);
+	background-repeat: no-repeat;
+}
+
+.tipusdocument.document {
+	background-position: 0 0;
+	width: 38px;
+	height: 43px;
+}
+
+.tipusdocument.image {
+	background-position: -43px 0;
+	width: 38px;
+	height: 43px;
+}
+
+.tipusdocument.other {
+	background-position: -86px 0;
+	width: 38px;
+	height: 43px;
+}
+
+.tipusdocument.pdf {
+	background-position: -129px 0;
+	width: 38px;
+	height: 43px;
+}
+
+.tipusdocument.sound {
+	background-position: -172px 0;
+	width: 38px;
+	height: 43px;
+}
+
+.tipusdocument.video {
+	background-position: -215px 0;
+	width: 38px;
+	height: 43px;
+}
+
+.search-icon-small {
+	background-image: url(../../images/mobilitat/search.png);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.enlace-icon-small {
+	background-image: url(../../images/mobilitat/enlace.png);
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 7px;
+}
+
+.home-icon-search {
+	background-image: url(../../images/mobilitat/home_icon_search.png);
+	background-repeat: no-repeat;
+	width: 110px;
+	height: 31px;
+}
+
+li .ui-icon-custom-icon-arrow-r {
+	background-image: url(../../images/mobilitat/arrow_off.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: -3px -3px;
+/*	height: 24px !important;
+	width: 24px !important;*/
+}
+
+li:hover .ui-icon-custom-icon-arrow-r {
+	background-image: url(../../images/mobilitat/arrow_red.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: -3px -3px;
+/*	height: 24px !important;
+	width: 24px !important;*/
+}
+
+.ui-icon,.ui-icon-searchfield:after {
+	/*background: transparent;*/
+	 background-color: #ffffff;
+}
+.ui-icon,
+.ui-icon-searchfield:after {
+	background-image: url(images/icons-18-black.png) /*{global-icon-set}*/;
+	background-repeat: no-repeat;
+	-moz-border-radius: 				9px;
+	-webkit-border-radius: 				9px;
+	border-radius: 						9px;
+}
+.ui-li-has-arrow .ui-icon-arrow-r {
+	background-image: url(../../images/mobilitat/arrow_off.png) !important;
+	background-position: -3px -3px;
+}
+
+.ui-btn-hover-z .ui-icon-arrow-r {
+	background-image: url(../../images/mobilitat/arrow_red.png) !important;
+	background-position: -3px -3px;
+}
+
+form,div,a,span {
+	text-shadow: 0 0px 0px transparent;
+}
+
+form[role="search"] {
+	padding-right: 40px;
+}
+
+.ui-li-has-count .ui-li-count {
+	right: 41px;
+}
+
+.ui-li-heading {
+	font-size: 14px;
+	color: #AC2115;
+	/*margin: 0px 0px 15px 0px;*/
+}
+
+.ui-li-desc {
+	white-space: normal;
+}
+
+a .ui-li-desc {
+	margin-right: 20px
+}
+
+.ui-li-desc:last-child {
+	margin-bottom: 0px;
+}
+
+/*form[role="search"] .ui-icon-searchfield::after
+{
+	position:absolute;
+	left: auto !important;
+	right: -30px !important;
+	background-image: url(../../images/mobilitat/delete.png);
+	background-repeat: no-repeat;
+	width: 23px;
+	height: 23px;
+} */
+.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit,.ui-li-static.ui-li-has-thumb
+	{
+	padding-left: 100px; /*Amplada imatge*/
+}
+
+.ui-li-has-thumb {
+	max-height: 80px !important;
+}
+
+label.ui-radio-on,label.ui-checkbox-on {
+	background-color: #e2e2e2 !important;
+}
+
+.ui-checkbox-on .ui-icon,.ui-radio-on .ui-icon {
+	background-color: #ffffff;
+}
+
+.ui-icon.ui-icon-shadow {
+	border: 1px solid #CCC;
+}
+
+.ui-icon-checkbox-on {
+	border: 1px solid #606060 !important;
+	background-image: url(../../images/mobilitat/check-rd.png);
+	background-position: 4px 5px;
+}
+
+.ui-icon-radio-on {
+	border: 1px solid #606060 !important;
+	background-image: url(../../images/mobilitat/rb_active.png);
+	background-position: 0px 0px;
+}
+
+.ui-btn-hover-z.ui-btn-down-z
+{
+	background-color: #DCDCDC;
+}
+
+.titol-contenidor {
+	font-weight: bold;
+	color: #3c3c3c;
+	font-size: 14px;
+}
+.cos-contenidor {
+	font-weight: normal;
+	color: #3C3C3C;
+	font-size: 14px;
+}
+.titol-lliure {
+	font-weight: bold;
+	color: #ac2115;
+	font-size: 15px;
+}
+.cos-lliure {
+	font-weight: normal;
+	color: #3C3C3C;
+	font-size: 14px;
+}
+
+.titol-llista {
+	color: #ac2115;
+	font-size: 14px;
+}
+.cos-llista {
+	color: #3C3C3C;
+	font-size: 15px;
+}
+
+label.error{
+color:red;
+font-size: 14px;
+font-family: Helvetica;
+font-weight: normal;
+padding-left:15px;
+}
+
+.ui-icon-loading{
+	background-image: url(images/ajax-loader.png) !important;
+}
+input.ui-input-text, textarea.ui-input-text {
+background-color:#ffffff;
+}	

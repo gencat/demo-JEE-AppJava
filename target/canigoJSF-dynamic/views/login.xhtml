@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 	xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:h="http://java.sun.com/jsf/html"
+			xmlns:p="http://primefaces.org/ui"
+		xmlns:c="http://java.sun.com/jstl/core">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<ui:insert name="title">
+			<title><ui:insert name="title">#{msg.welcomeMessage}</ui:insert></title>
+			<link rel="stylesheet" href="#{facesContext.externalContext.requestContextPath}/css/import.css" type="text/css" />
+		</ui:insert>
+		<style type="text/css">
+			td { text-align: center; }
+		</style>	
+	</head>
+	<body>
+	<div id="outer">
+		<table border="0" cellpadding="0" cellspacing="1" width="100%">
+			<tr>
+				<td align="center" valign="top" style="text-align:center"><br/>
+					<center>
+						<table border="0" cellpadding="2">
+							<tr>
+								<td width="100%" valign="top" style="text-align:center">
+								    <!-- Contingut principal -->
+									<c:if test="#{not empty param.error}">
+										<font color="red">										
+											<h:outputText value="#{msg.loginError}" /><br/>
+											<h:outputText value="#{SPRING_SECURITY_LAST_EXCEPTION.message}" />
+										</font>
+									</c:if>
+									<div class="Container">
+										<div id="imatge">
+											<img src="#{facesContext.externalContext.requestContextPath}/canigo/images/logo.png" border="0" alt="Centre de Suport Canigó" width="175" height="36" />
+										</div>
+										<div id="separador"></div>
+										<div id="Dialog">
+											<form action="#{facesContext.externalContext.requestContextPath}/AppJava/j_spring_security_check" method="post">
+												<fieldset style="border:0">
+													<table width="300" border="0">
+												      <tr>
+												        <td align="right"><font class="asterisc">* </font><h:outputText value="#{msg.loginUser}" />:</td>
+												        <td>
+															<h:inputText styleClass="textLogin" id="j_username" value="#{SPRING_SECURITY_LAST_USERNAME}" />
+														</td>
+												      </tr>
+												      <tr>
+												        <td align="right"><font class="asterisc">*</font><h:outputText value="#{msg.loginPassword}" />:</td>
+												        <td><h:inputSecret styleClass="textLogin" id="j_password" value="password1" /></td>
+												      </tr>
+												      <tr>
+												        <td colspan="2" align="center"><br/><h:commandButton styleClass="botoLogin" type="submit" value="#{msg.loginSubmit}" /></td>
+												      </tr>
+												    </table>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</center>
+					<br/><br/>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" valign="top" style="text-align:center">
+					<center>
+						<table>
+							<tr>
+								<td>
+									<strong><h:outputText value="#{msg.loginPlantillaCanigo}" /></strong><h:outputText escape="false" value="#{msg.loginPlantillaCanigoText}" />
+								</td>
+							</tr>
+						</table>
+					</center>			
+				</td>
+			</tr>
+		</table>
+		<div id="bottom-section">
+			<div id="bottom-col-1">
+				<ui:insert name="footer">
+					<ui:include src="includes/footer.jsf" />
+				</ui:insert>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

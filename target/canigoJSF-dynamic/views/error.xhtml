@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jstl/core">
+	
+	<ui:composition >
+		 	 <h1>#{msg.errorTitlePage}</h1>
+		 	 <h:panelGrid columns="1" width="100%">
+	            <p:panel toggleable="true" header="#{msg.errorMessageCauseLabel}">
+	                    <h:outputFormat escape="false">#{genericErrorBean.summary}</h:outputFormat>
+	                    <br/>
+	                    <h:outputFormat escape="false">#{genericErrorBean.details}</h:outputFormat>	
+	            </p:panel>
+	            <p:panel toggleable="true" header="#{msg.errorStackTraceLabel}" collapsed="true">
+						<c:forEach items="#{genericErrorBean.trace}" var="item">
+							<h:outputText escape="false" value="#{item.lefty}" />
+							<br/>
+							<h:outputText escape="false" value="#{item.righty}" />
+							<br/><br/><br/><br/>
+						</c:forEach>	                    	
+	            </p:panel>
+	        </h:panelGrid>
+	</ui:composition>
+</html>

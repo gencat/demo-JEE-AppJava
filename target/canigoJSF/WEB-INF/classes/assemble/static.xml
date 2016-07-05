@@ -1,0 +1,21 @@
+<assembly>
+  <id>static</id>
+  <formats>
+    <format>dir</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <fileSets>
+    <fileSet>
+      <directory>target/canigoJSF</directory>
+      <outputDirectory>/</outputDirectory>
+      <includes>
+      	<include>**/*.html</include>
+      	<include>**/*.htm</include>
+      	<include>css/**/*</include>
+      	<include>images/**/*</include>
+      	<include>js/**/*</include>
+      	<include>canigo/**/*</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</assembly>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jstl/core">
+	
+	<ui:composition template="layouts/template.jsf">
+		<ui:define name="ariadna">
+			<h:outputLink value="index.xhtml">
+				<h:outputFormat>#{msg.breadCrumbInit}</h:outputFormat>	
+			</h:outputLink>
+		</ui:define>
+		<ui:define name="body">
+			<h1>${msg.menuExamplesLogReader}</h1>
+			<h:form id="logForm">
+                <h:panelGrid columns="2">
+                	<h:outputText value="#{msg['jsp.traces.llistaTraces.usuari']}" />
+                	<h:inputText id="user" value="#{logReaderBean.user}" size="50"/>
+                	<h:outputText value="#{msg['jsp.traces.llistaTraces.data']}" />
+                	<p:outputPanel id="calendar" layout="block">
+                    	<p:calendar value="#{logReaderBean.date}"
+                        	locale="ca_ES"
+                        	mode="popup"
+                        	pattern="d/MM/yyyy"
+                        	style="width:200px"/>
+            		<p:outputPanel>
+                	<h:outputText value="#{msg['jsp.traces.llistaTraces.nivell']}" />
+                	<h:selectOneMenu id="level"	 value="#{logReaderBean.level}">
+                		<f:selectItem itemValue="" itemLabel="#{msg['jsp.traces.llistaTraces.selectAndOption']}"/>
+						<f:selectItem itemValue="debug" itemLabel="debug"/>
+						<f:selectItem itemValue="info" itemLabel="info"/>
+						<f:selectItem itemValue="error" itemLabel="error"/>
+						<f:selectItem itemValue="warning" itemLabel="warning"/>
+					</h:selectOneMenu> 
+                	<h:outputText value="#{msg['jsp.traces.llistaTraces.missatge']}" />
+                	<h:inputText id="message" value="#{logReaderBean.message}" size="50"/>
+                	<p:commandButton value="#{msg.canigoSearch}" actionListener="#{logReaderBean.execute}" update="logList" />
+                </h:panelGrid>
+            </h:form>
+            <br/><br/><br/><br/>
+			<h:form>
+			<p:dataTable id="logList" onRowMouseOver="this.style.backgroundColor='#F1F1F1'"
+				onRowMouseOut="this.style.backgroundColor='#{a4jSkin.tableBackgroundColor}'"
+				cellpadding="0" cellspacing="0" width="500" border="0" var="log"
+				value="#{logReaderBean.logTrace}" rows="10">
+	
+				<p:column>
+					<f:facet name="header">#{msg['jsp.traces.llistaTraces.hour']}</f:facet>
+					<h:outputText value="#{log.hour}" />
+				</p:column>
+	
+				<p:column>
+					<f:facet name="header">#{msg['jsp.traces.llistaTraces.nivell']}</f:facet>
+					<h:outputText value="#{log.nivell}" />
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">#{msg['jsp.traces.llistaTraces.usuari']}</f:facet>
+					<h:outputText value="#{log.userId}" />
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">#{msg['jsp.traces.llistaTraces.classe']}</f:facet>
+					<h:outputText value="#{log.classe}" />
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">#{msg['jsp.traces.llistaTraces.missatge']}</f:facet>
+					<h:outputText value="#{log.missatge}" />
+				</p:column>
+				
+				<f:facet name="footer">
+					<rich:datascroller renderIfSinglePage="false" maxPages="5" />
+				</f:facet>
+	
+			</p:dataTable>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+
+</html>

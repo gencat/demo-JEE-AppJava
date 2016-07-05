@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>#{msg.welcomeMessage}</title>
+		<link rel="stylesheet" href="../css/import.css" type="text/css" />
+		<script language="JavaScript">
+			<!--
+			function redirectToLogin(){
+				setTimeout(window.location="#{facesContext.externalContext.requestContextPath}/AppJava/views/login.xhtml", 20000);
+			}
+			window.onload = redirectToLogin();
+			//-->
+		</script>
+	</head>
+	<body>
+		<center><h4><h:outputText value="#{msg.logoutMessage}"/></h4></center>
+	</body>
+</html>

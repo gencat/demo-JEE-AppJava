@@ -1,0 +1,18 @@
+/*** override primefaces style ***/
+.ui-datalist-empty-message {
+	display: none !important;
+}
+
+
+.ui-widget-content {
+ border: none !important; 
+ background: none !important;
+}
+
+.ui-tree {
+width: 100%!important;
+}
+
+.ui-datatable-odd {
+	background-color:#EBEBEB !important;
+}
