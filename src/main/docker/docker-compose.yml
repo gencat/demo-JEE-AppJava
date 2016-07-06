@@ -16,7 +16,7 @@ gicar:
   APPSERVER_PORT_8080_TCP_PORT: 8080 
   context: canigoJSF
  volumes:
-  - /home/asancho/demo-JEE-AppJava/target/canigoJSF-static:/var/www/html/canigoJSF
+  - /home/canigo/Documents/workspace-sts-3.7.1.RELEASE/demo-JEE-AppJava/target/canigoJSF-static:/var/www/html/canigoJSF
 db:
   build: ./bbdd/
   ports:
@@ -27,13 +27,13 @@ db:
     MYSQL_ROOT_PASSWORD: root
     MYSQL_DATABASE: demo
   volumes:
-   - /home/asancho/demo-JEE-AppJava/mysql-datadir:/var/lib/mysql
+   - /home/canigo/Documents/workspace-sts-3.7.1.RELEASE/demo-JEE-AppJava/mysql-datadir:/var/lib/mysql
 demo:
   build: ./app/
   links:
     - db:mybbdd
   volumes:
-   - /home/asancho/demo-JEE-AppJava/target/canigoJSF-dynamic:/opt/tomcat/webapps/canigoJSF
+   - /home/canigo/Documents/workspace-sts-3.7.1.RELEASE/demo-JEE-AppJava/target/canigoJSF-dynamic:/opt/tomcat/webapps/canigoJSF
   ports:
    - 8080:8080
    - 8000:8000

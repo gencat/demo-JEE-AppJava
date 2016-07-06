@@ -55,5 +55,6 @@ INSERT INTO authorities (username, authority) values ('admin', 'ROLE_ADMIN');
 INSERT INTO authorities (username, authority) values ('admin', 'ROLE_USER');
 INSERT INTO authorities (username, authority) values ('user', 'ROLE_USER');
 INSERT INTO authorities (username, authority) values ('43550594W', 'ROLE_ADMIN');
+INSERT INTO authorities (username, authority) values ('43550594W', 'ROLE_USER');
 
 select * from users;

@@ -20,16 +20,15 @@
 	    
 	    <!--  Secure patterns -->
 		<!-- JSF -->
-		<security:intercept-url pattern="/**/views/login.xhtml" 		access="IS_AUTHENTICATED_ANONYMOUSLY"/>
-	    	<security:intercept-url pattern="/**/views/logout.xhtml" 		access="IS_AUTHENTICATED_ANONYMOUSLY"/>
-		<security:intercept-url pattern="/**/views/index.xhtml" 		access="IS_AUTHENTICATED_ANONYMOUSLY"/>
- 		<security:intercept-url pattern="/**/views/accessDenied.xhtml" 		access="IS_AUTHENTICATED_ANONYMOUSLY"/>
-		<security:intercept-url pattern="/**/views/error.xhtml" 		access="IS_AUTHENTICATED_ANONYMOUSLY"/>
-	    	<security:intercept-url pattern="/**/views/monitoring.xhtml"		access="ROLE_ADMIN" />
-		<security:intercept-url pattern="/**/views/propertyExpose.xhtml"	access="ROLE_ADMIN" />
-		<security:intercept-url pattern="/**/views/moduleList.xhtml"		access="ROLE_ADMIN" />
-		<security:intercept-url pattern="/**/views/logReader.xhtml" 		access="ROLE_ADMIN"/>
-	    	<security:intercept-url pattern="/**/views/**" 				access="ROLE_USER"/>
+		<security:intercept-url pattern="/**/views/login.xhtml" 			access="IS_AUTHENTICATED_ANONYMOUSLY" />
+	    <security:intercept-url pattern="/**/views/logout.xhtml" 			access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+	    <security:intercept-url pattern="/**/views/error.xhtml" 			access="IS_AUTHENTICATED_ANONYMOUSLY" />
+	    <security:intercept-url pattern="/**/views/accessDenied.xhtml" 		access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+	    <security:intercept-url pattern="/**/views/monitoring.xhtml"		access="ROLE_ADMIN" />
+	    <security:intercept-url pattern="/**/views/propertyExpose.xhtml"	access="ROLE_ADMIN" />
+	    <security:intercept-url pattern="/**/views/moduleList.xhtml"		access="ROLE_ADMIN" />
+	    <security:intercept-url pattern="/**/views/logReader.xhtml" 		access="ROLE_ADMIN"/>
+	    <security:intercept-url pattern="/**/views/**" 					access="ROLE_USER"/>
 	    
 	    <security:logout logout-url="/AppJava/views/logout.xhtml" />
 	
@@ -49,7 +48,8 @@
 	</security:authentication-manager>
 	
 	<!-- GICAR -->
-	<bean id="proxyUsernamePasswordAuthenticationFilter" class="cat.gencat.ctti.canigo.arch.security.authentication.ProxyUsernamePasswordAuthenticationFilter">
+	<bean id="proxyUsernamePasswordAuthenticationFilter" class="cat.gencat.ctti.canigo.arch.security.authentication.ProxyUsernamePasswordAuthenticationFilter">	
+		<property name="filterProcessesUrl" value="/AppJava/j_spring_security_check" />
 		<property name="siteminderAuthentication" 		value="true" />
 		<property name="authenticationManager" 			ref="authenticationManager" />
 		<property name="authenticationFailureHandler" 	ref="failureHandler" />
