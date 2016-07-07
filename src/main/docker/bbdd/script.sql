@@ -38,6 +38,7 @@ INSERT INTO users (username, password, enabled) VALUES ('user', 'password', true
 INSERT INTO users (username, password, enabled) VALUES ('user2', 'password2', false);
 INSERT INTO users (username, password, enabled) VALUES ('admin', 'password', true);
 INSERT INTO users (username, password, enabled) VALUES ('43550594W', '12341234', true);
+INSERT INTO users (username, password, enabled) VALUES ('NIFDEMO', '12345678', true);
 
 INSERT INTO groups (id, group_name) VALUES (1, 'Usuaris');
 INSERT INTO groups (id, group_name) VALUES (2, 'Administradors');
@@ -56,5 +57,7 @@ INSERT INTO authorities (username, authority) values ('admin', 'ROLE_USER');
 INSERT INTO authorities (username, authority) values ('user', 'ROLE_USER');
 INSERT INTO authorities (username, authority) values ('43550594W', 'ROLE_ADMIN');
 INSERT INTO authorities (username, authority) values ('43550594W', 'ROLE_USER');
+INSERT INTO authorities (username, authority) values ('NIFDEMO', 'ROLE_ADMIN');
+INSERT INTO authorities (username, authority) values ('NIFDEMO', 'ROLE_USER');
 
 select * from users;
