@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xml:lang="ca-ES" lang="ca-ES" xmlns="http://www.w3.org/1999/xhtml">
+<!-- SiteMinder Encoding=ISO-8859-1; -->
+<head>
+	<title>Formulari de login GICAR</title>
+	<meta charset="ISO-8859-1" />
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="pragma" content="no-cache">
+	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+	<link href="css/master.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body><!-- Cross-frame scripting prevention: This code will prevent this page from being encapsulated within HTML frames. Remove, or comment out, this code if the functionality that is contained in this SiteMinder page is to be included within HTML frames. -->
+
+<div id="wrap">
+
+	<div class="contenidor unfixed">
+
+		<header class="fons_header navbar navbar-default z-index-menu">
+			<div class="container" role="menu">
+				<div class="row clearfix menuNav">
+					<div class="col-md-3 col-xs-3 column visible-xs coloca ">
+					</div>
+
+					<div class="col-md-3 col-xs-6 col-offset-2 column visible-xs titol-mobil">
+						<span class="white titol-mobil-destacat">GICAR</span>
+					</div>
+
+					<div class="col-md-3 col-xs-3 column visible-xs coloca1">
+					</div>
+
+				</div>
+
+				<nav class="collapse navbar-collapse navbar-ex1-collapse ">
+				
+					<div class="row">
+						<div class="col-md-6 col-sm-4 column">
+							<a class="img-responsive logo" title="Generalitat de Catalunya"
+								href="http://ctti.gencat.cat/">gencat.cat</a>
+						</div>
+						
+					</div>
+					<div class="col-xs-12 hidden-xs" id="nomPortal">
+                    	<span class="titol-cap-nou">Autenticaci&oacute d'usuaris</span>
+                    </div>					
+
+				</nav>
+			</div>
+		</header>
+
+		<section class="border-start">
+				
+				<article class="padding-xs padding-sm padding-md contingut">
+
+					<div class="container">
+
+						<div class="col-md-12">
+							<div class="col-xs-12 col-md-3"></div>
+	
+							<div id="invalid" class="alert alert-danger col-xs-12 col-md-6" style="display:none">
+							    <a href="#" class="close" data-dismiss="alert" aria-label="close" id="invalid-close">&times;</a>
+								<strong>Credencials no v&agrave;lides</strong>
+							</div>
+	
+							<div class="col-xs-12 col-md-3"></div>
+	
+						</div>
+
+						<div class="col-md-12">
+
+							<div class="col-xs-12 col-md-3"></div>
+
+							<div class="destacat_text_avancat_cont form col-xs-12 col-md-6" id="form-sandbox">
+
+								<h2 class="border_verd">Acc&eacute;s amb credencials corporatives</h2>
+
+								<form name='Login' id='Login' method='post'>
+
+									<div class="col-xs-12 col-md-12">
+										<label>Usuari<span class="red">*</span></label><input name='USER' id='user' type='text' required class="form-control" placeholder="DNI o NIE" />
+									</div>
+									<div class="col-xs-12 col-md-12">
+										<label>Password<span class="red">*</span></label><input name='PASSWORD' id='password' type='password' required class="form-control" />
+									</div>
+
+									<div class="col-xs-12 col-md-6">
+										<input type='submit' class="btn bgRed white margin_top_xs" value="Accedeix" />
+									</div>
+
+									<div class="col-xs-12 col-md-6">
+										<a href="https://idp4-gicar.gencat.cat/autogestio/" class="btn margin_top_xs">Canvi de contrasenya</a>
+									</div>
+
+								</form>
+							</div>						
+
+							<div class="col-xs-12 col-md-3"></div>
+
+						</div>	
+					</div>	
+
+				</article>	
+
+		</section>	
+
+
+	</div>
+
+</div>
+
+	<div class="fons_footer" id="footer">
+
+		<footer class="container center-block shadowBox2">
+			<div class="shadow2"></div>
+			<div class="row footer_tab_ord">
+
+				<div class="footer_tab_bot col-sm-12">
+					<div class="avis_legal">
+
+						<div id="fAvisLegal">
+							<div>
+								<div class="hidden-xs">
+									<a href="http://www.gencat.cat"> <img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAAAbCAYAAABlVEF+AAAE1klEQVR42u1aC43jMBAthaNQCkehFMxgN6tFEAqlUAqhEAqlYAqmkKurebmX17Hzq24rXSNZSRN/581/eji8r9e7Pj8/z19fX9emadKtRWvDrfXUBjTry+8xJuVveb43VXdeN0K2RtwMysVaZ78BRszEJsDQOhqTDLT2TdX9oDQkASDwAM6H1OS+JB2JQMvAdOib55uTTAbcpOv0YvTo8z3vi8///f19zO9u919z83x8fPzefC4jUieADLaBcwGUPm+MJGeUsJr64vltrlHyXgUYnDnfFRT6NrtX0OoZoIyqiTfhgSK/R4kpgZI5xwPAxt2BNW78Zev29i0Ql56Ng+/f85251lRxb5LbiN0cx9m6webP/S95fwqKrHmi814gMbTXLF1tfmfSFnmePYZ+DyhVQ09zdfzeDnYCUUhlcgvEtdo6AXcg8M/2Td97cyUi8oOk0P7HudUJKr1frQVkkrQRlLQUFHw3yRk9PCFCNI5riSj4lqCviZhHJixJZRJQ7hxOdqNlNZy/rVFf2Lvudbf6ypMRd162gEL9Ysn7UlAcbn3gxgJ396T6apw/noOfIZ3sMfI8K0EJjmTvBwVcBi7fAcodUKihkpcHKXBc8p49QSMKtyWgRB3ngULMd18ThF0DCknnYCbgeZJiCyccYisocHVL+tO4MynxmMNY7ZBhVvX1AIo9j3ESx14FUHq472bw00pQzsxk1u9SoFVY4kK7waMQYQsoJ1ZPFQ8sibgjI9A7brNnQ1xQiEicfWg8UBw1GZUGHigE9qDxFrn3UR2PrYZ+wiU7QOnn0ixwGW3uALBY7eVncDG4TL00SDkf2FRKsHHHUj9ao813CgqP8lxcE995n7wO/14tKU8GJb1zX8+JYJ9iU0y001ya5X0tuGBc94Iy5315Xh8M5gaPcRJJ57VXR80LmBUa4J+DQt5H2glKtHnCCgmdGO6lgDjOwugQPGtNjat+IgHXUz1lS0QfOQCcM/LmtjZKIPOy7tJTMo6QSGSXKTMwSeHAmbCo/Sie5hUAIhrXdSUHVnUy4B1iLsyjxl/6HtnpmZyZVc/O3FcVlAqHV11hBxTMEVQVYm0nyuZUzECZ7qPuKY+dyxY7MdJDmgr756y79Y0U8CYv/3YQ3bwZFFQkS6AwlyL35AWNpk4vXvLSizlKKgqShHiBg0pICidJre+iHFgFlN72z4TH+g0xRiRN8bC2pu7jjoRktZ7CUbTqd1onWerjyoHYGlDYSDPTlIhrxLlI302gSKJyoOTnYOWEVrLXwVubDT0GJSlcPYBgROsoJdJSCTnUQOH6iANKlP8G9EvUF9mVTpKTnZd10LQJMdUiSTFVvAgU6ptAMwqO+f1fSXFq9J3qZKgCR1dHkrJqjZ5VBWVpNa8VYRxLqpDGRdRZOMutXpMHCuyG5qdKoJB6jVKRnQVFUy66Ngx8CZSRU+kfK7GQEk/0fdKvBIpnVCWvdC3lrhyHIZaKVJID43LzmTkc8Y3znwMU1RTcVCkNVEHhPYE+IqWTtQ/Qe7nB+FEgGSBqcNuMawL3Qx+UTWcCVfxbJnDwSIWiHsWoGde61TKs2IkO0sHr8Lo0T2du8YnGTIJHkpCOz8/uN7nejZaB1QvjM9g9/Fiw+r9drO6gut7Xa+QWh1qtSa8/THeaL5on1H0AAAAASUVORK5CYII="
+										width="101" height="27" alt="www.gencat.cat"
+										/></a>
+									<p>
+										<a title="Avis legal" href="http://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Av&iacute;s legal</a>: La &copy; Generalitat de Catalunya permet la reutilitzaci&oacute; dels continguts i de les dades sempre que se citi la font i la data d'actualitzaci&oacute;, que no es desnaturalitzi la informaci&oacute; i que no es contradigui amb una llic&egrave;ncia espec&iacute;fica.
+									</p>
+								</div>
+								<div class="visible-xs avis_legal">
+									<p>
+										<a title="Avis legal" href="http://web.gencat.cat/ca/menu-ajuda/ajuda/avis_legal/" target="_self">Av&iacute;s legal</a>: La &copy; Generalitat de Catalunya permet la reutilitzaci&oacute; dels continguts i de les dades sempre que se citi la font i la data d'actualitzaci&oacute;, que no es desnaturalitzi la informaci&oacute; i que no es contradigui amb una llic&egrave;ncia espec&iacute;fica.
+									</p>
+								</div>
+								
+								<div class="fi_peu visible-xs">
+									<a title="www.gencat.cat" href="http://www.gencat.cat"> <img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAAAbCAYAAABlVEF+AAAE1klEQVR42u1aC43jMBAthaNQCkehFMxgN6tFEAqlUAqhEAqlYAqmkKurebmX17Hzq24rXSNZSRN/581/eji8r9e7Pj8/z19fX9emadKtRWvDrfXUBjTry+8xJuVveb43VXdeN0K2RtwMysVaZ78BRszEJsDQOhqTDLT2TdX9oDQkASDwAM6H1OS+JB2JQMvAdOib55uTTAbcpOv0YvTo8z3vi8///f19zO9u919z83x8fPzefC4jUieADLaBcwGUPm+MJGeUsJr64vltrlHyXgUYnDnfFRT6NrtX0OoZoIyqiTfhgSK/R4kpgZI5xwPAxt2BNW78Zev29i0Ql56Ng+/f85251lRxb5LbiN0cx9m6webP/S95fwqKrHmi814gMbTXLF1tfmfSFnmePYZ+DyhVQ09zdfzeDnYCUUhlcgvEtdo6AXcg8M/2Td97cyUi8oOk0P7HudUJKr1frQVkkrQRlLQUFHw3yRk9PCFCNI5riSj4lqCviZhHJixJZRJQ7hxOdqNlNZy/rVFf2Lvudbf6ypMRd162gEL9Ysn7UlAcbn3gxgJ396T6apw/noOfIZ3sMfI8K0EJjmTvBwVcBi7fAcodUKihkpcHKXBc8p49QSMKtyWgRB3ngULMd18ThF0DCknnYCbgeZJiCyccYisocHVL+tO4MynxmMNY7ZBhVvX1AIo9j3ESx14FUHq472bw00pQzsxk1u9SoFVY4kK7waMQYQsoJ1ZPFQ8sibgjI9A7brNnQ1xQiEicfWg8UBw1GZUGHigE9qDxFrn3UR2PrYZ+wiU7QOnn0ixwGW3uALBY7eVncDG4TL00SDkf2FRKsHHHUj9ao813CgqP8lxcE995n7wO/14tKU8GJb1zX8+JYJ9iU0y001ya5X0tuGBc94Iy5315Xh8M5gaPcRJJ57VXR80LmBUa4J+DQt5H2glKtHnCCgmdGO6lgDjOwugQPGtNjat+IgHXUz1lS0QfOQCcM/LmtjZKIPOy7tJTMo6QSGSXKTMwSeHAmbCo/Sie5hUAIhrXdSUHVnUy4B1iLsyjxl/6HtnpmZyZVc/O3FcVlAqHV11hBxTMEVQVYm0nyuZUzECZ7qPuKY+dyxY7MdJDmgr756y79Y0U8CYv/3YQ3bwZFFQkS6AwlyL35AWNpk4vXvLSizlKKgqShHiBg0pICidJre+iHFgFlN72z4TH+g0xRiRN8bC2pu7jjoRktZ7CUbTqd1onWerjyoHYGlDYSDPTlIhrxLlI302gSKJyoOTnYOWEVrLXwVubDT0GJSlcPYBgROsoJdJSCTnUQOH6iANKlP8G9EvUF9mVTpKTnZd10LQJMdUiSTFVvAgU6ptAMwqO+f1fSXFq9J3qZKgCR1dHkrJqjZ5VBWVpNa8VYRxLqpDGRdRZOMutXpMHCuyG5qdKoJB6jVKRnQVFUy66Ngx8CZSRU+kfK7GQEk/0fdKvBIpnVCWvdC3lrhyHIZaKVJID43LzmTkc8Y3znwMU1RTcVCkNVEHhPYE+IqWTtQ/Qe7nB+FEgGSBqcNuMawL3Qx+UTWcCVfxbJnDwSIWiHsWoGde61TKs2IkO0sHr8Lo0T2du8YnGTIJHkpCOz8/uN7nejZaB1QvjM9g9/Fiw+r9drO6gut7Xa+QWh1qtSa8/THeaL5on1H0AAAAASUVORK5CYII="
+										width="101" height="27" 
+										alt="www.gencat.cat" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+<script src="js/gicar.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+
+
+</body>
+</html>

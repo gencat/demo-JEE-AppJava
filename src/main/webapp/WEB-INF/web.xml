@@ -13,7 +13,7 @@
 		genèrica de l'aplicació -->
 	<context-param>
 		<param-name>errorPage</param-name>
-		<param-value>/views/error.xhtml</param-value>
+		<param-value>/AppJava/views/error.xhtml</param-value>
 	</context-param>
 	<!-- Indica que estem en un entorn de desenvolupament, i davant error en 
 		la aplicació es mostrarà una pàgina detallada amb la informació del mateix, 
@@ -156,22 +156,22 @@
 	</session-config>
 	<!-- Welcome page -->
 	<welcome-file-list>
-		<welcome-file>/views/index.xhtml</welcome-file>
+		<welcome-file>/AppJava/views/index.xhtml</welcome-file>
 	</welcome-file-list>
 	<!-- Error page for HTTP Error 403 Forbidden -->
 	<error-page>
 		<error-code>403</error-code>
-		<location>/views/error.xhtml</location>
+		<location>/AppJava/views/error.xhtml</location>
 	</error-page>
 	<!-- Pàgina d'error genèrica -->
 	<error-page>
 		<exception-type>java.lang.Throwable</exception-type>
-		<location>/views/error.xhtml</location>
+		<location>/AppJava/views/error.xhtml</location>
 	</error-page>
 	<!-- Pàgina no trobada -->
 	<error-page>
 		<error-code>404</error-code>
-		<location>/views/pagenotfound.xhtml</location>
+		<location>/AppJava/views/pagenotfound.xhtml</location>
 	</error-page>
 	<!-- Encoding -->
 	<jsp-config>
